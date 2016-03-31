@@ -1,6 +1,6 @@
 ﻿namespace osmos_client
 {
-    partial class Form1
+    partial class Controller_Form
     {
         /// <summary>
         /// Required designer variable.

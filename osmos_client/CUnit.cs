@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace osmos_client
 {
@@ -12,6 +13,8 @@ namespace osmos_client
         protected double scale;//размер
         protected int radX, radY;//координаты круга 
         protected int radUnit;
+
+        public Image img = Properties.Resources.player;
 
         public void cheackCollide(CUnit unit)
         {
@@ -37,7 +40,7 @@ namespace osmos_client
 
         public void draw()
         {
-
+            x = ++y;
             //отрисовка
         }
             
