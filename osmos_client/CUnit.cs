@@ -9,7 +9,7 @@ namespace osmos_client
 {
     class CUnit
     {
-        protected int x, y;//позиция
+        public int x, y;//позиция
         protected double scale;//размер
         protected int radX, radY;//координаты круга 
         protected int radUnit;
@@ -38,8 +38,9 @@ namespace osmos_client
             }
         }
 
-        public void draw()
+        public void move()
         {
+            if(x<=300 &&y<=300)
             x = ++y;
             //отрисовка
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace osmos_client
 {
@@ -20,10 +21,16 @@ namespace osmos_client
         {
             InitializeComponent();
 
-            model = new Model();
+            model = new Model(speedGame);
 
-            view = new View();
+            view = new View(model);
             this.Controls.Add(view);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread modelPlay = new Thread(model.play);
+            modelPlay.Start();
         }
     }
 }

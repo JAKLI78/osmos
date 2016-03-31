@@ -8,3 +8,4 @@ F:\УЧЕБА\Сети\курсач\osmos.git\osmos_client\obj\Debug\osmos_clien
 F:\УЧЕБА\Сети\курсач\osmos.git\osmos_client\obj\Debug\osmos_client.csproj.GenerateResource.Cache
 F:\УЧЕБА\Сети\курсач\osmos.git\osmos_client\obj\Debug\osmos_client.exe
 F:\УЧЕБА\Сети\курсач\osmos.git\osmos_client\obj\Debug\osmos_client.pdb
+F:\УЧЕБА\Сети\курсач\osmos.git\osmos_client\obj\Debug\osmos_client.Controller_Form.resources

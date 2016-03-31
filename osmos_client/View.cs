@@ -7,14 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace osmos_client
 {
-    public partial class View : UserControl
+     partial class View : UserControl
     {
-        public View()
+        Model model;
+        public View(Model Amodel)
         {
             InitializeComponent();
+            this.model = Amodel;
+            
         }
+
+        void draw(PaintEventArgs e)
+        {
+            Thread.Sleep(model.speedGame);
+            e.Graphics.DrawImage(model.unit.img, new Point(model.unit.x, model.unit.y));
+            Invalidate();
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            draw(e);
+            
+        }
+
+        
     }
 }
